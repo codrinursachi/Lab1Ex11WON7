@@ -4,7 +4,7 @@
     {
         Console.WriteLine("Introduceti un numar pentru a fi clasificat");
         var numarRaw=Console.ReadLine();
-        if(numarRaw != null && int.TryParse(numarRaw,out int numar))
+        if(int.TryParse(numarRaw,out int numar))
             return numar;
         Console.WriteLine("Nu ati introdus datele in format valid, mai incercati");
         return ReadNumber();
